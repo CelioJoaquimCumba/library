@@ -1,4 +1,3 @@
-import React from "react";
 import TopBar from "../components/molecules/Topbar.tsx";
 import SearchBar from "../components/molecules/SearchBar.tsx";
 import HeroSection from "../components/organisms/HeroSection.tsx";

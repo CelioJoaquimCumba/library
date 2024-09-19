@@ -1,4 +1,3 @@
-import React from "react";
 import NavItem from "../atoms/NavItem.tsx";
 import Logo from "../../assets/images/logo.png"
 
