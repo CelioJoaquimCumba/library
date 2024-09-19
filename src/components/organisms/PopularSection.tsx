@@ -36,8 +36,8 @@ export default function PopularSection() {
     return (
         <div className="flex flex-col self-stretch bg-slate-800 p-8 text-white">
             <h3 className="w-full text-center text-2xl font-medium">Mais populares e recomendados</h3>
-            <article className="grid gap-4 grid-cols-12">
-                <section className="flex flex-col gap-4 border border-white p-4 col-span-3">
+            <article className="md:grid gap-4 md:grid-cols-12">
+                <section className="flex flex-col gap-4 border border-white p-4 md:col-span-3">
                     <div className="flex flex-col gap-2">
                         <h4 className="bg-yellow-500 p-2 text-slate-800 text-lg font-bold flex justify-center">Funcionalidades Principais</h4>
                         <ul className="flex flex-col gap-2">
@@ -58,7 +58,7 @@ export default function PopularSection() {
                         <p>Acesse e baxe os recursos sem a necessidade de criar uma conta ou fazer login</p>
                     </div>
                 </section>
-                <section className="grid grid-cols-4 gap-4 border border-white p-4 col-span-9 auto-rows-min">
+                <section className="grid md:grid-cols-4 gap-4 border border-white p-4 col-span-9 auto-rows-min">
                     {
                         books.map(book => <BookCard key={book.src} title={book.title} image={book.image} src={book.src} />  )
                     }

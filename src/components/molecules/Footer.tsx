@@ -3,8 +3,8 @@ import Logo from "../../assets/images/logo.png"
 
 export default function Footer() {
     return (
-        <footer className="self-stretch  text-white grid grid-cols-12 gap-8 bg-slate-800 p-8 border border-white">
-            <section className="flex flex-col gap-2 col-span-2">
+        <footer className="self-stretch  text-white grid grid-cols-1 md:grid-cols-12 gap-8 bg-slate-800 p-8 border border-white">
+            <section className="flex flex-col gap-2 md:col-span-2">
                 <img src={Logo} alt="company name" className="size-24" />
                 <div className="flex gap-2">
                     <Facebook className="stroke-yellow-500" />
@@ -12,7 +12,7 @@ export default function Footer() {
                     <Instagram className="stroke-yellow-500" />
                 </div>
             </section>
-            <section className="col-span-5">
+            <section className="md:col-span-5">
                 <h4 className="text-lg text-yellow-500">Instituicoes Parceiras</h4>
                 <ul>
                     <li>Ministerio da Educação e Desenvolvimento Humano</li>
@@ -23,7 +23,7 @@ export default function Footer() {
                     <li>Centro de Estudos e Investigação de Moçambique (CEIM)</li>
                 </ul>
             </section>
-            <section className="col-span-3">
+            <section className="md:col-span-3">
                 <h4 className="text-lg text-yellow-500">Jurídico</h4>
                 <ul>
                     <li>Termos de uso</li>
@@ -34,7 +34,7 @@ export default function Footer() {
                     <li>Configurações de cookies</li>
                 </ul>
             </section>
-            <section className="col-span-2">
+            <section className="md:col-span-2">
                 <h4 className="text-lg text-yellow-500">Informação</h4>
                 <ul>
                     <li>Sobre nós</li>
@@ -43,7 +43,7 @@ export default function Footer() {
                     <li>Valores</li>
                 </ul>
             </section>
-            <section className="col-span-12 text-center">@2024 Plataforma Educacional Integrado. Todos os direitos reservados</section>
+            <section className="md:col-span-12 text-center">@2024 Plataforma Educacional Integrado. Todos os direitos reservados</section>
         </footer>
     );
 }

@@ -12,12 +12,12 @@ export default function SearchBar() {
     return (
         <section className="flex self-stretch flex-col gap-2 justify-center items-center bg-yellow-500 p-4">
             <Input value={search} onChange={handleSearch} type="text" placeholder="Search..." className="max-w-6xl" />
-            <div className="flex w-full justify-between gap-4 items-center max-w-6xl">
+            <div className="flex  flex-col md:flex-row w-full justify-between gap-4 items-center max-w-6xl">
                 <div className="flex gap-2">
                     <SlidersHorizontal className="size-full" />
                     <span>Filtros:</span>
                 </div>
-                <div className="flex justify-between flex-grow">
+                <div className="flex flex-col self-stretch gap-2 md:flex-row justify-between flex-grow">
                     {
                         filters.map(filter => <FilterItem key={filter.label} {...filter}/>)
                     }
