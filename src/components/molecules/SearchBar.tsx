@@ -10,7 +10,7 @@ export default function SearchBar() {
         setSearch(e.currentTarget.value)
     }
     return (
-        <section className="flex flex-col gap-2 justify-center items-center bg-yellow-500 p-4">
+        <section className="flex self-stretch flex-col gap-2 justify-center items-center bg-yellow-500 p-4">
             <Input value={search} onChange={handleSearch} type="text" placeholder="Search..." className="max-w-6xl" />
             <div className="flex w-full justify-between gap-4 items-center max-w-6xl">
                 <div className="flex gap-2">

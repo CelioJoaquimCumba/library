@@ -7,10 +7,10 @@ import Footer from "../components/molecules/Footer.tsx";
 
 export default function Landing() {
     return (
-        <div className="w-screen h-dvh">
+        <div className="flex flex-col items-center w-screen">
             <TopBar />
             <SearchBar />
-            <main className="max-w-4xl">
+            <main className="flex flex-col self-stretch">
                 <HeroSection />
                 <PopularSection />
             </main>
